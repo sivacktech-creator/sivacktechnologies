@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivack Technology | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="icon" type="" href="images/sicacklogo.jpeg">
+</head>
+<body>
+
+    <a href="https://wa.me/917736345481" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="sivack-logo.png" alt="Sivack Logo"> 
+                SIVACK <span>Technologies</span>
+            </a>
+            
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="training.html">Training</a>
+                <!-- <a href="team.html">Team</a> -->
+                <a href="contact.html">Contact</a>
+                
+                <a href="" class="btn btn-primary" style="margin: 10px 0; display: none;">Register</a>
+                <a href="" style="font-size: 14px; font-weight: 600; display: none; color: var(--primary);">Member Login</a>
+                <style>@media(max-width: 1200px) { .nav-links .btn, .nav-links a[href="membership.html"] { display: inline-block !important; } }</style>
+            </nav>
+            
+            <div class="nav-right-container">
+                <a href="" class="header-icon-btn">
+                    <i class="fas fa-id-card"></i>
+                    <span>Member</span>
+                </a>
+                <a href="register.html" class="header-icon-btn">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+                <!-- <img src="MSME_LOGO-1.png" alt="MSME India" class="header-msme-logo"> -->
+                   <div class="header-msme-box">
+                    <img src="MSME_LOGO-1.png" alt="MSME India">
+                    <span>Registered in MSME</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1920') center/cover; height: 700px; display: flex; align-items: center; position: relative;">
+        <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5);"></div>
+        <div class="container" style="position: relative; z-index: 1; color: white;">
+            <h1>INNOVATION FOR A BRIGHT FUTURE</h1>
+            <p style="font-size: 22px; margin-bottom: 40px; max-width: 700px;">SIVACK Technologies is a dynamic company in the manufacturing and service sector, empowering students and professionals.</p>
+            <a href="service.html" class="btn btn-primary">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center;">
+                <div class="service-img" style="border-radius: 8px; height: 400px;">
+                    <img src="" alt="About Sivack">
+                </div>
+                <div>
+                    <span class="sub-title">WHO WE ARE</span>
+                    <h2>Manufacturing & Service Excellence</h2>
+                    <p style="margin-bottom: 20px; font-size: 16px; line-height: 1.8;">
+                        SIVACK Technologies is a dynamic company in the manufacturing and service sector, with a strong focus on green energy technologies, robotics and digital solutions.
+                    </p>
+                    <p style="margin-bottom: 30px; font-size: 16px; line-height: 1.8; border-left: 4px solid var(--primary); padding-left: 15px; color: #555;">
+                        Our mission is to promote sustainable future development by empowering students and professionals with cutting-edge knowledge and skills.
+                    </p>
+                    <a href="about.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center;">
+                
+                <div class="service-img" style="border-radius: 8px; height: 400px;">
+                    <img src="images/solar about.jpeg" alt="About Sivack">
+                </div>
+
+                <div>
+                    <span class="sub-title">WHO WE ARE</span>
+                    <h2>Innovating for a Smarter Future</h2>
+                    
+                    <p style="margin-bottom: 20px; font-size: 16px; line-height: 1.8; color: #555;">
+                        SIVACK Technologies is a dynamic leader in the manufacturing and service sector, dedicated to bridging the gap between education and industry. We specialize in green energy, robotics and digital innovation to provide cutting-edge solutions that empower both businesses and students. From developing autonomous drones to installing hybrid solar systems, we are a team of passionate engineers committed to transforming ideas into reality. We are more than just a technology company; we are your partners in building a smarter, sustainable future.
+                    </p>
+                   <p style="margin-bottom: 30px; font-size: 16px; line-height: 1.8; border-left: 4px solid var(--primary); padding-left: 15px; color: #555;">
+                    Our Mission is to drive <span style="color: var(--primary); font-weight: 700;">sustainable development</span> by delivering advanced industrial 
+                    solutions and <span style="color: var(--primary); font-weight: 700;">world-class training</span> in <span style="color: var(--secondary); font-weight: 700;">
+                    Robotics, Solar Energy and IoT</span> Empowering the next generation to engineer a <span style="color: var(--primary); font-weight: 700;">greener tomorrow</span>.
+                    </p>
+
+                    <a href="about.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <span class="sub-title">OUR EXPERTISE</span>
+                    <h2>Our Core Services</h2>
+                </div>
+                <a href="service.html" class="btn btn-primary">View All Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600" alt="Solar"></div>
+                    <div class="service-icon"><i class="fas fa-industry"></i></div>
+                    <div class="service-text">
+                        <h4>Solar Power Plant Services</h4>
+                        <p>We provide complete design and engineering solutions for solar power plants, including site analysis and system planning.</p>
+                        <button class="service-btn" onclick="openModal('Solar Power Plant Services', 'We provide complete design and engineering solutions for solar power plants, including site analysis and system planning. Our team handles end-to-end installation and commissioning. We also offer operation and maintenance services for long-term reliability and efficiency.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img"><img src="images/drone.png" alt="Drones"></div>
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <div class="service-text">
+                        <h4>Drone Development</h4>
+                        <p>We specialize in the design and development of advanced drone systems for applications such as surveillance, inspection, mapping and research.</p>
+                        <button class="service-btn" onclick="openModal('Drone Development', 'We specialize in the design and development of advanced drone systems for applications such as surveillance, inspection, mapping and research. Our solutions include custom airframe design, flight controller integration, sensor payloads and autonomous features.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img"><img src="images/robot.png" alt="Robotics"></div>
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <div class="service-text">
+                        <h4>Robotics Devices</h4>
+                        <p>We develop intelligent robotic solutions to automate logistics and material handling processes across industries.</p>
+                        <button class="service-btn" onclick="openModal('Robotics Devices', 'We develop intelligent robotic solutions to automate logistics and material handling processes across industries. Our systems include autonomous robots for sorting, transportation, inspection and warehouse operations.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="section">
+        <div class="container text-center">
+            
+            <div class="section-header">
+                <span class="sub-title">HANDS-ON LEARNING</span>
+                <h2>Training Courses</h2>
+                <p style="font-size: 18px; color: #555;">We empower students and professionals with cutting-edge knowledge.</p>
+            </div>
+            
+            <!-- <div class="training-pills-container">
+                <div class="training-pill" onclick="openModal('Drone Training', 'Learn mechanics, flight dynamics and hands-on piloting.', 'training', '1 Month', '15,000')">Drone Training</div>
+                <div class="training-pill" onclick="openModal('RC Aircraft', 'Fabrication and flight training for radio-controlled model aircrafts.', 'training', '3 Weeks', '10,000')">RC Aircraft</div>
+                <div class="training-pill" onclick="openModal('Robotics', 'Design, build and program custom robots for automation.', 'training', '2 Months', '18,000')">Robotics</div>
+            
+            </div> -->
+            <!-- <div class="prog-card" onclick="openModal('IoT Development', 'Real-time projects & applications in Internet of Things.', 'training', '1 Month', '15,000')">
+                <div class="prog-icon"><i class="fas fa-wifi"></i>
+                </div>
+                    <h4>IoT Development</h4>
+            </div> -->
+<!-- program -->
+           <!-- <div class="section-header" style="margin-top: 80px;">
+    <span class="sub-title">SKILL DEVELOPMENT</span>
+    <h2>Programmes Offered</h2>
+</div> -->
+
+<div class="prog-grid">
+    
+    <div class="prog-card" onclick="openModal('Drone & Aviation Technology', 'Design, development and hands-on training in unmanned aerial vehicle (UAV) systems for surveillance, mapping and automation. Includes RC Aircraft design and fabrication.', 'training', '1 Month', '15,000')">
+        <div class="prog-icon"><i class="fas fa-plane-departure"></i></div>
+        <h4>Drone & Aviation Technology</h4>
+        <p style="font-size: 13px; color: #666; margin-top: 10px;">UAV Systems & RC Aircraft</p>
+    </div>
+
+    <div class="prog-card" onclick="openModal('Robotics & Automation', 'Comprehensive training on robotics design, automation solutions and educational training programs. Learn to build custom robotic devices.', 'training', '1 Month', '15,000')">
+        <div class="prog-icon"><i class="fas fa-robot"></i></div>
+        <h4>Robotics</h4>
+        <p style="font-size: 13px; color: #666; margin-top: 10px;">Automation & Design</p>
+    </div>
+
+    <div class="prog-card" onclick="openModal('Internet of Things (IoT)', 'Practical Internet of Things training with real-time projects and applications. Learn to connect devices and analyze data.', 'training', '1 Month', '15,000')">
+        <div class="prog-icon"><i class="fas fa-wifi"></i></div>
+        <h4>IoT Training</h4>
+        <p style="font-size: 13px; color: #666; margin-top: 10px;">Real-time Projects</p>
+    </div>
+
+    <div class="prog-card" onclick="openModal('Programming & Coding', 'Master core programming logic and software development. Covers essential coding languages and problem-solving skills.', 'training', '1 Month', '12,000')">
+        <div class="prog-icon"><i class="fas fa-terminal"></i></div>
+        <h4>Programming & Coding</h4>
+        <p style="font-size: 13px; color: #666; margin-top: 10px;">C, C++, Python, Java</p>
+    </div>
+
+    <div class="prog-card" onclick="openModal('Full Stack Web Development', 'Professional website design and development for businesses and startups. Covers Layout, Navigation, Homepage design and backend logic.', 'training', '2 Months', '18,000')">
+        <div class="prog-icon"><i class="fas fa-laptop-code"></i></div>
+        <h4>Full Stack Web Devlopment</h4>
+        <p style="font-size: 13px; color: #666; margin-top: 10px;">Design & Development</p>
+    </div>
+
+    <div class="prog-card" onclick="openModal('Graphic Designing', 'Creative branding, logos, posters and digital design solutions. Master tools like Photoshop (Ps) and Illustrator (Ai).', 'training', '1 Month', '12,000')">
+        <div class="prog-icon"><i class="fas fa-pen-nib"></i></div>
+        <h4>Graphic Design</h4>
+        <p style="font-size: 13px; color: #666; margin-top: 10px;">Branding & UI Design</p>
+    </div>
+
+</div>
+            <!-- program -->
+
+            <!-- <div class="section-header" style="margin-top: 80px;">
+                <span class="sub-title">IT SOLUTIONS</span>
+                <h2>Programmes Offered</h2>
+            </div>
+
+            <div class="prog-grid">
+                <div class="prog-card" onclick="openModal('IoT Development', 'Real-time projects & applications in Internet of Things.', 'service')">
+                    <div class="prog-icon"><i class="fas fa-wifi"></i></div>
+                    <h4>IoT Development</h4>
+                </div>
+                <div class="prog-card" onclick="openModal('Web Development', 'Full-stack design & development for modern businesses.', 'service')">
+                    <div class="prog-icon"><i class="fas fa-code"></i></div>
+                    <h4>Web Development</h4>
+                </div>
+                <div class="prog-card" onclick="openModal('Graphical Design', 'Creative branding, logos, posters and UI/UX design.', 'service')">
+                    <div class="prog-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h4>Graphical Design</h4>
+                </div>
+                <div class="prog-card" onclick="openModal('Programming', 'Core programming logic and software development.', 'service')">
+                    <div class="prog-icon"><i class="fas fa-terminal"></i></div>
+                    <h4>Programming & Coding</h4>
+                </div>
+            </div> -->
+
+            <a href="training.html" class="btn btn-primary" style="margin-top: 50px;">View All Courses</a>
+
+            <!-- <div class="brand-slider-container">
+                <h4 class="brand-slider-title">Brand Deals With</h4>
+                <div class="brand-slider-wrapper">
+                    <div class="brand-slide-track">
+                        <img src="images/adani.png" class="brand-logo-img" alt="Adani">
+                        <img src="images/panasonic.png" class="brand-logo-img" alt="Panasonic">
+                        <img src="images/lt.png" class="brand-logo-img" alt="Tata"> -->
+                        <!-- <img src="https://logo.clearbit.com/larsentoubro.com" class="brand-logo-img" alt="L&T">
+                        <img src="https://logo.clearbit.com/havells.com" class="brand-logo-img" alt="Havells"> -->
+                        
+                        <!-- <img src="https://logo.clearbit.com/adani.com" class="brand-logo-img" alt="Adani">
+                        <img src="https://logo.clearbit.com/panasonic.com" class="brand-logo-img" alt="Panasonic">
+                        <img src="https://logo.clearbit.com/tata.com" class="brand-logo-img" alt="Tata">
+                        <img src="https://logo.clearbit.com/larsentoubro.com" class="brand-logo-img" alt="L&T">
+                        <img src="https://logo.clearbit.com/havells.com" class="brand-logo-img" alt="Havells"> -->
+                    <!-- </div>
+                </div>
+            </div> -->
+
+            <div class="logo-carousel">
+  <div class="logo-track">
+    <div class="logo-item"><img src="images/adani.png" alt="Adani"></div>
+    <div class="logo-item"><img src="images/panasonic.png" alt="Panasonic"></div>
+    <div class="logo-item"><img src="images/lt.png" alt="Havlite"></div>
+    <div class="logo-item"><img src="images/logo.png" alt="Jio"></div>
+    <!-- <div class="logo-item"><img src="images/sicacklogo.jpeg" alt="TruRock"></div> -->
+    
+    <!-- <div class="logo-item"><img src="adani.png" alt="Adani"></div>
+    <div class="logo-item"><img src="panasonic.png" alt="Panasonic"></div>
+    <div class="logo-item"><img src="havlite.png" alt="Havlite"></div>
+    <div class="logo-item"><img src="jio.png" alt="Jio"></div>
+    <div class="logo-item"><img src="trurock.png" alt="TruRock"></div> -->
+  </div>
+</div>
+
+</section>
+
+       
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">GET IN TOUCH</span>
+                <h2>Ready to Start Your Carrier?</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 25px rgba(0,0,0,0.1);">
+             
+                 <div class="contact-wrapper">
+                
+                <div class="contact-info-side">
+                    <h3 style="color: white; margin-bottom: 30px;">Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <h4><i class="fas fa-map-marker-alt"></i> Head Office (Kerala)</h4>
+                        <p>21/40 Sivam, Ground Floor,<br>Kayani PO Mattanur, Kannur, 670702</p>
+                    </div>
+
+                        <div class="contact-info-item">
+                        <h4><i class="fas fa-map-marker-alt"></i> Branch Office (Coimbatore)</h4>
+                        <p>148 Manoj Nagar, Phase 2, Kannampalayam,<br>Sulur, Coimbatore, 641402</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4><i class="fas fa-phone-alt"></i> Phone</h4>
+                        <p>+91 7736345481</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <p>sivacktech@gmail.com</p>
+                    </div>
+                </div>
+               
+                <!-- <div style="padding: 60px;">
+                    <h3 style="margin-bottom: 25px;">Contact Details</h3>
+                    <div style="margin-bottom: 35px;">
+                        <p style="margin-bottom: 20px; font-size: 16px;"><i class="fas fa-map-marker-alt" style="color: #32c36c; margin-right: 15px;"></i> 148 Manoj Nagar, Phase 2, Kannampalayam, Sulur, Coimbatore - 641402</p>
+                        <p style="margin-bottom: 20px; font-size: 16px;"><i class="fas fa-phone-alt" style="color: #32c36c; margin-right: 15px;"></i> +91 7736345481</p>
+                        <p style="font-size: 16px;"><i class="fas fa-envelope" style="color: #32c36c; margin-right: 15px;"></i> sivacktech@gmail.com</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Go to Contact Page</a>
+                </div> -->
+                <div style="background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800') center/cover; min-height: 450px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">SIVACK <span>Technologies</span></a>
+                <p style="color: #ccc; font-size: 14px; margin-bottom: 20px; line-height: 1.6;">
+                    Innovation for a bright future. We provide top-tier industrial training, automation solutionsand sustainable energy technologies.
+                </p>
+                
+                <div class="footer-social">
+                    <a href="https://business.facebook.com/latest/home?business_id=1236305368606922&asset_id=1036906499496877" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/sivacktechnologies/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <a href="https://x.com/SivackTech" target="_blank" title="X (Twitter)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/sivack-technologies-b7a6183b0" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@SivackTechnologies" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul class="footer-links">
+                    <li><a href="term&condition.html">Terms and Condition</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Gallery</h4>
+                <div class="footer-gallery">
+                    <img src="images/drone.png" alt="Img 1">
+                    <img src="images/iot.jpeg" alt="Img 2">
+                    <img src="images/iot.png" alt="Img 3">
+                    <img src="images/pc.jpeg" alt="Img 4">
+                    <img src="images/rc.jpeg" alt="Img 5">
+                    <img src="images/rc.png" alt="Img 6">
+                    <img src="images/solar.jpeg" alt="Img 7">
+                    <img src="images/siva.jpeg" alt="Img 8">
+                    <img src="images/drone1.jpeg" alt="Img 9">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container copyright-wrapper">
+            <p>&copy; 2026 SIVACK Technologies. All Rights Reserved.</p>
+            
+            <p class="design-credit">Designed by 
+                <a href="https://trurock.pages.dev/" target="_blank">TruRock</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h3 id="modalTitle" class="modal-title">Service Title</h3>
+            <p id="modalText" class="modal-text">Service description...</p>
+            
+            <div id="modalDetails" style="background: #f4f4f9; padding: 15px; margin: 20px 0; border-radius: 5px; border-left: 4px solid var(--primary); display: none;">
+                <p><strong>Duration:</strong> <span id="modalDuration"></span></p>
+                <p><strong>Price:</strong> ₹ <span id="modalPrice"></span></p>
+            </div>
+
+            <a href="register.html" id="modalRegisterBtn" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 15px; display: none;">Proceed to Register</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navLinks");
+            var icon = document.querySelector(".mobile-menu-icon i");
+            nav.classList.toggle("active");
+            if (nav.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        }
+
+        function openModal(title, text, type, duration, price) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalText').innerText = text;
+            
+            var detailsDiv = document.getElementById('modalDetails');
+            var registerBtn = document.getElementById('modalRegisterBtn');
+
+            // IF SERVICE: Hide Details & Register Button
+            if (type === 'service') {
+                detailsDiv.style.display = 'none';
+                registerBtn.style.display = 'none';
+            } 
+            // IF TRAINING: Show Details & Register Button
+            else {
+                if(duration && price) {
+                    document.getElementById('modalDuration').innerText = duration;
+                    document.getElementById('modalPrice').innerText = price;
+                    detailsDiv.style.display = 'block';
+                }
+                registerBtn.style.display = 'inline-block';
+            }
+            
+            document.getElementById('serviceModal').style.display = "block";
+        }
+        function closeModal() { document.getElementById('serviceModal').style.display = "none"; }
+        window.onclick = function(event) { if (event.target == document.getElementById('serviceModal')) { closeModal(); } }
+    </script>
+</body>
+</html>

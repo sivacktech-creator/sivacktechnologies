@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivack Technology | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="icon" type="" href="images/sicacklogo.jpeg">
+</head>
+<body>
+
+    <a href="https://wa.me/917736345481" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="sivack-logo.png" alt="Sivack Logo"> 
+                SIVACK <span>Technologies</span>
+            </a>
+            
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html"  class="active">Services</a>
+                <a href="training.html">Training</a>
+                <!-- <a href="team.html">Team</a> -->
+                <a href="contact.html">Contact</a>
+                
+                <a href="" class="btn btn-primary" style="margin: 10px 0; display: none;">Register</a>
+                <a href="" style="font-size: 14px; font-weight: 600; display: none; color: var(--primary);">Member Login</a>
+                <style>@media(max-width: 1200px) { .nav-links .btn, .nav-links a[href="membership.html"] { display: inline-block !important; } }</style>
+            </nav>
+            
+            <div class="nav-right-container">
+                <a href="" class="header-icon-btn">
+                    <i class="fas fa-id-card"></i>
+                    <span>Member</span>
+                </a>
+                <a href="" class="header-icon-btn">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+                <!-- <img src="MSME_LOGO-1.png" alt="MSME India" class="header-msme-logo"> -->
+                   <div class="header-msme-box">
+                    <img src="MSME_LOGO-1.png" alt="MSME India">
+                    <span>Registered in MSME</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-header"><div class="container"><h1>Our Services</h1></div></div>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">WHAT WE OFFER</span>
+                <h2>Diverse Range of Services</h2>
+            </div>
+            <div class="service-grid">
+
+                 <div class="service-item">
+                    <div class="service-img"><img src="images/solar grid on.jpeg" alt="Solar"></div>
+                    <div class="service-icon"><i class="fas fa-industry"></i></div>
+                    <div class="service-text">
+                        <h4>Solar On Grid Power System</h4>
+                        <p>We provide on-grid solar power systems that are directly connected to the utility grid, enabling users to generate clean energy and reduce electricity costs. These systems allow excess power to be exported to the grid through net metering</p>
+                        <button class="service-btn" onclick="openModal('Solar Power Plant Services', 'Our solutions are designed for high efficiency, reliability, and seamless grid integration. On-grid systems are ideal for homes, commercial buildings, and industries.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+             
+
+                <div class="service-item">
+                    <div class="service-img"><img src="images/solar grid off.png" alt="Robotics"></div>
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <div class="service-text">
+                        <h4>Solar Off Grid Power</h4>
+                        <p>Off-grid solar power systems operate independently without any connection to the utility grid. These systems use battery storage to supply power in remote and rural areas.</p>
+                        <button class="service-btn" onclick="openModal('Solar Off Grid Power', 'They are suitable for locations where grid access is not available or unreliable. Our off-grid solutions provide sustainable and cost-effective energy for long-term use.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img"><img src="images/Wind-Turbine-And-Solar-Panels.jpg" alt="Drones"></div>
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <div class="service-text">
+                        <h4>Hybrid Solar Power System</h4>
+                        <p>Hybrid solar power systems combine solar panels, battery storage, and grid supply to ensure uninterrupted power. These systems automatically switch between solar, battery, and grid based on availability.</p>
+                        <button class="service-btn" onclick="openModal('Hybrid Solar Power System', 'They are ideal for areas with frequent power cuts and critical power requirements. Our hybrid solutions offer energy independence with smart energy management.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                   <div class="service-item">
+                    <div class="service-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600" alt="Solar"></div>
+                    <div class="service-icon"><i class="fas fa-industry"></i></div>
+                    <div class="service-text">
+                        <h4>Solar Power Plant Services</h4>
+                        <p>We provide complete design and engineering solutions for solar power plants, including site analysis and system planning.</p>
+                        <button class="service-btn" onclick="openModal('Solar Power Plant Services', 'We provide complete design and engineering solutions for solar power plants, including site analysis and system planning. Our team handles end-to-end installation and commissioning. We also offer operation and maintenance services for long-term reliability and efficiency.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-img"><img src="images/drone.png" alt="Drones"></div>
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <div class="service-text">
+                        <h4>Drone Development</h4>
+                        <p>We specialize in the design and development of advanced drone systems for applications such as surveillance, inspection, mapping and research.</p>
+                        <button class="service-btn" onclick="openModal('Drone Development', 'We specialize in the design and development of advanced drone systems for applications such as surveillance, inspection, mapping and research. Our solutions include custom airframe design, flight controller integration, sensor payloads and autonomous features.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img"><img src="images/robot.png" alt="Robotics"></div>
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <div class="service-text">
+                        <h4>Robotics Devices</h4>
+                        <p>We develop intelligent robotic solutions to automate logistics and material handling processes across industries.</p>
+                        <button class="service-btn" onclick="openModal('Robotics Devices', 'We develop intelligent robotic solutions to automate logistics and material handling processes across industries. Our systems include autonomous robots for sorting, transportation, inspection and warehouse operations.', 'service')">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+               
+               <div class="service-item">
+    <div class="service-img">
+      <img src="images/rc.jpeg" alt="RC Planes">
+    </div>
+    <div class="service-icon"><i class="fas fa-robot"></i></div>
+    <div class="service-text">
+        <h4>RC Aircraft Design</h4>
+        <p>We specialize in the design and development of radio-controlled (RC) aircraft for educational, research and recreational applications. Our work includes airframe design, aerodynamic analysis, propulsion system selection and flight control integration.</p>
+       <button class="service-btn" onclick="openModal('RC Aircraft Design', ' We focus on achieving stability, performance and efficient flight characteristics. Each aircraft is tested for safety and reliability. We also provide hands-on training and technical guidance for building and flying RC aircraft.', 'service')">
+            View Details <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+               <div class="service-item">
+    <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600" alt="IoT">
+    </div>
+    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+    <div class="service-text">
+        <h4>IoT Solutions</h4>
+        <p>We develop smart IoT solutions that connect devices, sensors, and systems for real-time data monitoring and control. Our IoT applications include smart energy systems, industrial automation, home automation, and environmental monitoring.</p>
+       <button class="service-btn" onclick="openModal('IoT Solutions', 'We focus on integrating hardware and software to deliver reliable and scalable solutions. Our systems enable remote access, data analytics, and intelligent decision-making. We also provide IoT training and project development support.', 'service')">
+            View Details <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+               <div class="service-item">
+    <div class="service-img">
+        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=600" alt="Web Dev">
+    </div>
+    <div class="service-icon"><i class="fas fa-code"></i></div>
+    <div class="service-text">
+        <h4>Web Development</h4>
+        <p>We provide professional web development services to create responsive, user-friendly, and high-performance websites. Our solutions include custom website design, web applications, and business portals tailored to client needs.</p>
+       <button class="service-btn" onclick="openModal('Web Development', 'We focus on modern UI/UX, security, and scalability. Our websites are optimized for speed, mobile compatibility, and search engines. We also offer ongoing maintenance and technical support.', 'service')">
+            View Details <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+     <footer>
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">SIVACK <span>Technologies</span></a>
+                <p style="color: #ccc; font-size: 14px; margin-bottom: 20px; line-height: 1.6;">
+                    Innovation for a bright future. We provide top-tier industrial training, automation solutions and sustainable energy technologies.
+                </p>
+                
+                <div class="footer-social">
+                    <a href="https://business.facebook.com/latest/home?business_id=1236305368606922&asset_id=1036906499496877" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/sivacktechnologies/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <a href="https://x.com/SivackTech" target="_blank" title="X (Twitter)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/sivack-technologies-b7a6183b0" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@SivackTechnologies" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul class="footer-links">
+                     <li><a href="term&condition.html">Terms and Condition</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Gallery</h4>
+                <div class="footer-gallery">
+                    <img src="images/drone.png" alt="Img 1">
+                    <img src="images/iot.jpeg" alt="Img 2">
+                    <img src="images/iot.png" alt="Img 3">
+                    <img src="images/pc.jpeg" alt="Img 4">
+                    <img src="images/rc.jpeg" alt="Img 5">
+                    <img src="images/rc.png" alt="Img 6">
+                    <img src="images/solar.jpeg" alt="Img 7">
+                    <img src="images/siva.jpeg" alt="Img 8">
+                    <img src="images/drone1.jpeg" alt="Img 9">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container copyright-wrapper">
+            <p>&copy; 2026 SIVACK Technologies. All Rights Reserved.</p>
+            
+            <p class="design-credit">Designed by 
+                <a href="https://trurock.pages.dev/" target="_blank">TruRock</a>
+            </p>
+        </div>
+    </div>
+</footer>
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h3 id="modalTitle" class="modal-title">Service Title</h3>
+            <p id="modalText" class="modal-text">Description...</p>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() { document.getElementById("navLinks").classList.toggle("active"); }
+        function openModal(title, text) { document.getElementById('modalTitle').innerText = title; document.getElementById('modalText').innerText = text; document.getElementById('serviceModal').style.display = "block"; }
+        function closeModal() { document.getElementById('serviceModal').style.display = "none"; }
+        window.onclick = function(event) { if (event.target == document.getElementById('serviceModal')) { closeModal(); } }
+    </script>
+</body>
+</html>
